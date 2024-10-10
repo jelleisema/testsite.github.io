@@ -1,0 +1,118 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: #353535;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+h1
+{
+    font-size: 36px;
+}
+
+nav
+{
+    background-color: #000344;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li
+{
+    background-color: #000344;
+    display: inline;
+    position: relative;
+}
+nav ul li ul
+{
+    left: 0;
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+
+nav ul li ul:hover
+{
+    overflow: visible;
+}
+
+nav ul li a
+{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+nav ul li ul li
+{
+    display: block;
+    position: relative;
+    text-align: left;
+}
+nav ul li ul li a
+{
+    padding: 5px 15px;
+}
+nav ul li ul li ul
+{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    overflow: hidden;
+
+    max-width: 0;
+    transition: max-width 0.5s;
+}
+nav ul li ul li:hover ul
+{
+    max-width: 200px;
+}
+
+nav ul li:hover ul
+{
+    max-height: 200px;
+}
+
+main
+{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+}
+main img
+{
+    float: right;
+}
+main ul
+{
+    list-style: none;
+}
+
+footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    float: none;
+}
